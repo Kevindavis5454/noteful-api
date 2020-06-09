@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b44ec4-7533-4350-b026-e03293fabf91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/001.do.create_noteful_notes.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/001.undo.create_noteful_notes.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/002.do.create_noteful_folders.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/002.undo.create_noteful_folders.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgrator-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/notes-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seeds/seed.noteful_notes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/001.do.create_noteful_notes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/001.do.create_noteful_notes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584723396221</updated>
       <workItem from="1584723397324" duration="836000" />
-      <workItem from="1591707857215" duration="3870000" />
+      <workItem from="1591707857215" duration="12854000" />
     </task>
     <servers />
   </component>
