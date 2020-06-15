@@ -19,7 +19,7 @@ app.use(cors())
 
 app.use('/notes', notesRouter)
 
-app.get((req, res, next) => {
+/*app.get((req, res, next) => {
     NotesService.getAllNotes(
         req.app.get('db')
     )
@@ -27,7 +27,7 @@ app.get((req, res, next) => {
             res.json(notes)
         })
         .catch(next)
-})
+})*/
 
 app.use(function errorHandler(error, req, res, next) {
     let response
