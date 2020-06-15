@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b44ec4-7533-4350-b026-e03293fabf91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/seeds/seed.noteful_folders.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seeds/seed.noteful_notes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/seeds/seed.noteful_notes.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584723396221</updated>
       <workItem from="1584723397324" duration="836000" />
-      <workItem from="1591707857215" duration="13947000" />
+      <workItem from="1591707857215" duration="14441000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1591732643979</created>
@@ -71,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591732643979</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed things">
+      <created>1592252145079</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592252145079</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +98,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="fixed things" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed things" />
   </component>
 </project>

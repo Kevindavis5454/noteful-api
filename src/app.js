@@ -18,9 +18,9 @@ app.use(cors())
 
 app.use('/notes', notesRouter)
 
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.send('Hello, world!')
-})
+})*/
 
 app.use(function errorHandler(error, req, res, next) {
     let response
