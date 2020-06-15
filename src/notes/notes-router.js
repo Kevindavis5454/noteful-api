@@ -6,7 +6,7 @@ const jsonParser = express.json()
 const path = require('path')
 
 notesRouter
-    .route('/notes')
+    .route('/')
     .get((req, res, next) => {
         NotesService.getAllNotes(
             req.app.get('db')
