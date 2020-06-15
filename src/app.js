@@ -5,7 +5,8 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const notesRouter = require('./notes/notes-router')
-const NotesService = require('./notes/notes-service')
+/*const NotesService = require('./notes/notes-service')*/
+const folderRouter = require('./folders/folders-router')
 
 const app = express()
 
@@ -18,6 +19,7 @@ app.use(helmet())
 app.use(cors())
 
 app.use('/notes', notesRouter)
+app.use('/folders' , folderRouter)
 
 /*app.get((req, res, next) => {
     NotesService.getAllNotes(
