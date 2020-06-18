@@ -17,7 +17,7 @@ notesRouter
             })
             .catch(next)
     })
-    .post(jsonParser, (req, res, next) => {
+  /*  .post(jsonParser, (req, res, next) => {
         const { title, content } = req.body
         const newNote = { title, content }
 
@@ -43,7 +43,7 @@ notesRouter
     })
 
 notesRouter
-    /*.route('/notes/:note_id')
+    .route('/notes/:note_id')
     .all((req, res, next) => {
         const { note_id } = req.params
         NotesService.getById( req.app.get('db'), note_id)
@@ -64,7 +64,7 @@ notesRouter
             content: xss(res.note.content), // sanitize content
             /!*date_published: res.note.date_published,*!/
         })
-    })*/
+    })
     .delete((req, res, next) => {
         NotesService.deleteNote(
             req.app.get('db'),
@@ -78,5 +78,5 @@ notesRouter
     .patch((req, res) => {
         res.status(204).end()
     })
-
+*/
 module.exports = notesRouter
