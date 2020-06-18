@@ -43,10 +43,10 @@ notesRouter
     })
 
 notesRouter
-    .route('/notes/:note_id')
+    .route('/notes/:id')
     .all((req, res, next) => {
-        const { note_id } = req.params
-        NotesService.getById( req.app.get('db'), note_id)
+        const { id } = req.params
+        NotesService.getById( req.app.get('db'), id)
             .then(note => {
             if (!note) {
                 return res.status(404).json({
