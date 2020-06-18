@@ -44,7 +44,7 @@ notesRouter
 
 notesRouter
     .route('/notes/:note_id')
-    .all((req, res, next) => {
+    /*.all((req, res, next) => {
         const { note_id } = req.params
         NotesService.getById( req.app.get('db'), note_id)
             .then(note => {
@@ -56,14 +56,29 @@ notesRouter
             res.note = note // save the article for the next middleware
             next() // don't forget to call next so the next middleware happens!
         }).catch(next)
-    })
+    })*/
     .get((req, res, next) => {
-        res.json({
+        const { note_id } = req.params
+        NotesService.getById( req.app.get('db'), note_id)
+            .then(note => {
+
+                res.json(note)
+            })
+                /*if (!note) {
+                    return res.status(404).json({
+                        error: { message: `Note doesn't exist` }
+                    })
+                }*/
+                /*res.note = note // save the article for the next middleware*/
+                /*next() // don't forget to call next so the next middleware happens!*/
+
+            .catch(next)
+        /*res.json({
             id: res.note.id,
             title: xss(res.note.title), // sanitize title
-            content: xss(res.note.content), // sanitize content
+            content: xss(res.note.content), // sanitize content*/
             /*date_published: res.note.date_published,*/
-        })
+        /*})*/
     })
     .delete((req, res, next) => {
         NotesService.deleteNote(
