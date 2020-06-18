@@ -16,7 +16,7 @@ folderRouter
             })
             .catch(next)
     })
-  /*  .post(jsonParser, (req, res, next) => {
+    .post(jsonParser, (req, res, next) => {
         const { folder_name } = req.body
         const newFolder = { folder_name }
 
@@ -60,8 +60,8 @@ folderRouter
         res.json({
             id: res.folder.id,
             folder_name: xss(res.folder.folder_name), // sanitize title
-            /!*content: xss(res.folder.content), // sanitize content
-            date_published: res.folder.date_published,*!/
+            /*content: xss(res.folder.content), // sanitize content
+            date_published: res.folder.date_published,*/
         })
     })
     .delete((req, res, next) => {
@@ -76,6 +76,6 @@ folderRouter
     })
     .patch((req, res) => {
         res.status(204).end()
-    })*/
+    })
 
 module.exports = folderRouter
