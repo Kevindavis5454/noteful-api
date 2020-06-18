@@ -6,7 +6,7 @@ const jsonParser = express.json()
 const path = require('path')
 
 folderRouter
-    .route('/')
+    .route('/folders')
     .get((req, res, next) => {
         FoldersService.getAllFolders(
             req.app.get('db')
