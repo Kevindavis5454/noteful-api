@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02b44ec4-7533-4350-b026-e03293fabf91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/001.do.create_noteful_notes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/001.do.create_noteful_notes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/002.do.create_noteful_folders.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/002.do.create_noteful_folders.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seeds/seed.noteful_notes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/seeds/seed.noteful_notes.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584723396221</updated>
       <workItem from="1584723397324" duration="836000" />
-      <workItem from="1591707857215" duration="21533000" />
+      <workItem from="1591707857215" duration="22529000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1591732643979</created>
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592499302168</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixed things">
+      <created>1592501688012</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592501688012</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
