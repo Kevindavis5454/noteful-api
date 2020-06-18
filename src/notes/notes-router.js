@@ -44,22 +44,11 @@ notesRouter
             .catch(next)
     })
 
-    .delete((req, res, next) => {
-        const { id } = req.params
-        NotesService.deleteNote(
-            req.app.get('db'), id
-        )
-            .then(() => {
-                res.status(204).end()
-            })
-            .catch(next)
-    })
-
 notesRouter
     .route('/notes/:note_id')
     .all((req, res, next) => {
-        const { id } = req.params
-        NotesService.getById( req.app.get('db'), id)
+        const { note_id } = req.params
+        NotesService.getById( req.app.get('db'), note_id)
             .then(note => {
             if (!note) {
                 return res.status(404).json({
@@ -70,25 +59,25 @@ notesRouter
             next() // don't forget to call next so the next middleware happens!
         }).catch(next)
     })
-    /*.get((req, res, next) => {
+    .get((req, res,) => {
         res.json({
             id: res.note.id,
             title: xss(res.note.title), // sanitize title
             content: xss(res.note.content), // sanitize content
-            /!*date_published: res.note.date_published,*!/
+            /*date_published: res.note.date_published,*/
         })
-    })*/
+    })
     .delete((req, res, next) => {
+        const { note_id } = req.params
         NotesService.deleteNote(
-            req.app.get('db'),
-            req.params.id
+            req.app.get('db'), note_id
         )
             .then(() => {
                 res.status(204).end()
             })
             .catch(next)
     })
-    .patch((req, res) => {
+    /*.patch((req, res) => {
         res.status(204).end()
-    })
+    })*/
 module.exports = notesRouter
