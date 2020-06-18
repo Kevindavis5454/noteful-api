@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02b44ec4-7533-4350-b026-e03293fabf91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/folders/folders-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/folders/folders-router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notes/notes-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584723396221</updated>
       <workItem from="1584723397324" duration="836000" />
-      <workItem from="1591707857215" duration="18345000" />
+      <workItem from="1591707857215" duration="18993000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1591732643979</created>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592254265421</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed things">
+      <created>1592497239697</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592497239697</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

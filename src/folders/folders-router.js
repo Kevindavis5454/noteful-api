@@ -17,8 +17,8 @@ folderRouter
             .catch(next)
     })
     .post(jsonParser, (req, res, next) => {
-        const { title, content } = req.body
-        const newNote = { title, content }
+        const { folder_name } = req.body
+        const newFolder = { folder_name }
 
         for (const [key, value] of Object.entries(newFolder)) {
             if (value == null) {
@@ -35,19 +35,18 @@ folderRouter
             .then(folder => {
                 res
                     .status(201)
-                    .location(path.posix.join(req.originalUrl, `/${folder.id}`))
+                    .location(`/folders/${folder.id}`)
                     .json(folder)
             })
             .catch(next)
     })
 
 folderRouter
-    .route('/:note_id')
+    .route('/:folder_id')
     .all((req, res, next) => {
-        FoldersService.getById(
-            req.app.get('db'),
-            req.params.folder_id
-        ).then(folder => {
+        const { folder_id } = req.params
+        FoldersService.getById( req.app.get('db'), folder_id )
+            .then(folder => {
             if (!folder) {
                 return res.status(404).json({
                     error: { message: `Folder doesn't exist` }
@@ -60,9 +59,9 @@ folderRouter
     .get((req, res, next) => {
         res.json({
             id: res.folder.id,
-            title: xss(res.folder.title), // sanitize title
-            content: xss(res.folder.content), // sanitize content
-            date_published: res.folder.date_published,
+            folder_name: xss(res.folder.folder_name), // sanitize title
+            /*content: xss(res.folder.content), // sanitize content
+            date_published: res.folder.date_published,*/
         })
     })
     .delete((req, res, next) => {

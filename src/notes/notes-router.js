@@ -7,7 +7,7 @@ const path = require('path')
 const posix = require('posix')
 
 notesRouter
-    .route('/notes')
+    .route('/')
     .get((req, res, next) => {
         NotesService.getAllNotes(
             req.app.get('db')
