@@ -18,7 +18,9 @@ notesRouter
             .catch(next)
     })
     .post(jsonParser, (req, res, next) => {
+
         const { title, content, folder_id } = req.body
+
         const newNote = { title, content, folder_id }
 
         for (const [key, value] of Object.entries(newNote)) {
@@ -42,7 +44,7 @@ notesRouter
             .catch(next)
     })
 
-/*notesRouter
+notesRouter
     .route('/notes/:note_id')
     .all((req, res, next) => {
         const { note_id } = req.params
@@ -62,7 +64,7 @@ notesRouter
             id: res.note.id,
             title: xss(res.note.title), // sanitize title
             content: xss(res.note.content), // sanitize content
-            /!*date_published: res.note.date_published,*!/
+            /*date_published: res.note.date_published,*/
         })
     })
     .delete((req, res, next) => {
@@ -77,5 +79,5 @@ notesRouter
     })
     .patch((req, res) => {
         res.status(204).end()
-    })*/
+    })
 module.exports = notesRouter
