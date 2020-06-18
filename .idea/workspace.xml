@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b44ec4-7533-4350-b026-e03293fabf91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584723396221</updated>
       <workItem from="1584723397324" duration="836000" />
-      <workItem from="1591707857215" duration="27733000" />
+      <workItem from="1591707857215" duration="28043000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1591732643979</created>
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592515337084</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fixed things">
+      <created>1592516897154</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1592516897154</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
