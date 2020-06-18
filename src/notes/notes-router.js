@@ -4,9 +4,10 @@ const xss = require('xss')
 const notesRouter = express.Router()
 const jsonParser = express.json()
 const path = require('path')
+const posix = require('posix')
 
 notesRouter
-    .route('/')
+    .route('/notes')
     .get((req, res, next) => {
         NotesService.getAllNotes(
             req.app.get('db')
@@ -35,19 +36,18 @@ notesRouter
             .then(note => {
                 res
                     .status(201)
-                    .location(path.posix.join(req.originalUrl, `/${note.id}`))
+                    .location(`/notes/${note.id}`)
                     .json(note)
             })
             .catch(next)
     })
 
 notesRouter
-    .route('/:note_id')
+    .route('/notes/:note_id')
     .all((req, res, next) => {
-        NotesService.getById(
-            req.app.get('db'),
-            req.params.note_id
-        ).then(note => {
+        const { note_id } = req.params
+        NotesService.getById( req.app.get('db'), note_id)
+            .then(note => {
             if (!note) {
                 return res.status(404).json({
                     error: { message: `Note doesn't exist` }
@@ -62,7 +62,7 @@ notesRouter
             id: res.note.id,
             title: xss(res.note.title), // sanitize title
             content: xss(res.note.content), // sanitize content
-            date_published: res.note.date_published,
+            /*date_published: res.note.date_published,*/
         })
     })
     .delete((req, res, next) => {
