@@ -58,8 +58,8 @@ notesRouter
         }).catch(next)
     })*/
     .get((req, res, next) => {
-        const { note_id } = req.params
-        NotesService.getById( req.app.get('db'), note_id)
+        const { id } = req.params
+        NotesService.getById(req.app.get('db'), id)
             .then(note => {
 
                 res.json(note)
