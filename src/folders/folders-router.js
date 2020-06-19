@@ -42,7 +42,7 @@ folderRouter
     })
 
 folderRouter
-    .route('/:folder_id')
+    .route('/folders/:folder_id')
     .all((req, res, next) => {
         const { folder_id } = req.params
         FoldersService.getById( req.app.get('db'), folder_id )
@@ -56,7 +56,7 @@ folderRouter
             next() // don't forget to call next so the next middleware happens!
         }).catch(next)
     })
-    .get((req, res, next) => {
+    .get((req, res) => {
         res.json({
             id: res.folder.id,
             folder_name: xss(res.folder.folder_name), // sanitize title
@@ -65,17 +65,17 @@ folderRouter
         })
     })
     .delete((req, res, next) => {
+        const { folder_id } = req.params
         FoldersService.deleteFolder(
-            req.app.get('db'),
-            req.params.folder_id
+            req.app.get('db'), folder_id
         )
             .then(() => {
                 res.status(204).end()
             })
             .catch(next)
     })
-    .patch((req, res) => {
+   /* .patch((req, res) => {
         res.status(204).end()
-    })
+    })*/
 
 module.exports = folderRouter
